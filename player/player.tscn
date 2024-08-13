@@ -1,0 +1,179 @@
+[gd_scene load_steps=18 format=3 uid="uid://las1htstodyc"]
+
+[ext_resource type="Texture2D" uid="uid://lcf48smramwl" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Player-Bomb Guy-Sheet.png" id="1_2opko"]
+[ext_resource type="Script" path="res://player/playerMovement.gd" id="1_8bcld"]
+[ext_resource type="Texture2D" uid="uid://bopp8go36wnkb" path="res://assets/Treasure Hunters/Treasure Hunters/Wood and Paper UI/Sprites/Big Text/5.png" id="3_sxlip"]
+[ext_resource type="AudioStream" uid="uid://bn7neg4swkin2" path="res://assets/sounds/footsteps/Footsteps_Walk_Grass_Mono_44.wav" id="4_b5udu"]
+[ext_resource type="AudioStream" uid="uid://bost5kso6bs1v" path="res://assets/sounds/footsteps/Footsteps_Walk_Grass_Mono_45.wav" id="5_nn54e"]
+[ext_resource type="AudioStream" uid="uid://b13vit4wuc4lv" path="res://assets/sounds/footsteps/Footsteps_Tile_Walk_07.wav" id="6_u7hu0"]
+[ext_resource type="AudioStream" uid="uid://b724l2dooj68k" path="res://assets/sounds/footsteps/Footsteps_Tile_Walk_08.wav" id="7_6clig"]
+[ext_resource type="AudioStream" uid="uid://bqb0m4rethi83" path="res://assets/sounds/sfx/coin_c_02-102844.mp3" id="8_rh8qh"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8hvow"]
+radius = 7.0
+
+[sub_resource type="Animation" id="Animation_agh7x"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_kps0r"]
+resource_name = "idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_6ywud"]
+resource_name = "jump"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [15, 16, 17, 18, 19]
+}
+
+[sub_resource type="Animation" id="Animation_fsy1r"]
+resource_name = "walk"
+length = 0.80001
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [7, 8, 9, 10, 11, 12, 13, 14]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"_play_footstep_grass_audio"
+}, {
+"args": [],
+"method": &"_play_footstep_grass_audio"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b1hnl"]
+_data = {
+"RESET": SubResource("Animation_agh7x"),
+"idle": SubResource("Animation_kps0r"),
+"jump": SubResource("Animation_6ywud"),
+"walk": SubResource("Animation_fsy1r")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c5bu2"]
+size = Vector2(47, 54)
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_q40te"]
+streams_count = 2
+stream_0/stream = ExtResource("4_b5udu")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("5_nn54e")
+stream_1/weight = 1.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_6xm3b"]
+streams_count = 2
+stream_0/stream = ExtResource("6_u7hu0")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("7_6clig")
+stream_1/weight = 1.0
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 1089
+script = ExtResource("1_8bcld")
+max_jump_height = 30.0
+min_jump_height = 5.0
+double_jump_height = 15.0
+max_acceleration = 1300
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_2opko")
+hframes = 8
+vframes = 8
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 21)
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_8hvow")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_b1hnl")
+}
+
+[node name="Interaction" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(0, -33)
+texture = ExtResource("3_sxlip")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(3.5, 1)
+shape = SubResource("RectangleShape2D_c5bu2")
+
+[node name="Footsteps_Grass" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamRandomizer_q40te")
+volume_db = -10.0
+
+[node name="Footsteps_Tile" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamRandomizer_6xm3b")
+volume_db = -10.0
+
+[node name="FootArea2D2" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 128
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FootArea2D2"]
+position = Vector2(3, 21)
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_8hvow")
+
+[node name="Success" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_rh8qh")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
+[connection signal="area_entered" from="FootArea2D2" to="." method="_on_foot_area_2d_2_area_entered"]

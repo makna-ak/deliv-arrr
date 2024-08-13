@@ -1,0 +1,256 @@
+[gd_scene load_steps=20 format=3 uid="uid://dmkpgrs6d5by1"]
+
+[ext_resource type="Script" path="res://UI/main_menu.gd" id="1_kl5q7"]
+[ext_resource type="Texture2D" uid="uid://bse7x5xe2xsu7" path="res://assets/Treasure Hunters/Treasure Hunters/Wood and Paper UI/Sprites/Big Text/4.png" id="2_506g5"]
+[ext_resource type="Texture2D" uid="uid://cb3db6qistaak" path="res://assets/Treasure Hunters/Treasure Hunters/Wood and Paper UI/Aseprite/banner.png" id="2_hd102"]
+[ext_resource type="Texture2D" uid="uid://bopp8go36wnkb" path="res://assets/Treasure Hunters/Treasure Hunters/Wood and Paper UI/Sprites/Big Text/5.png" id="3_hlkfj"]
+[ext_resource type="Texture2D" uid="uid://cuq4hismoegxw" path="res://assets/Treasure Hunters/Treasure Hunters/Wood and Paper UI/Sprites/Big Text/12.png" id="4_j8n5f"]
+[ext_resource type="Texture2D" uid="uid://dm8ll0mh61scb" path="res://assets/Treasure Hunters/Treasure Hunters/Wood and Paper UI/Sprites/Big Text/9.png" id="5_ltcxr"]
+[ext_resource type="Texture2D" uid="uid://c4qhk1fqd8hlt" path="res://assets/Treasure Hunters/Treasure Hunters/Wood and Paper UI/Sprites/Big Text/22.png" id="6_7k12q"]
+[ext_resource type="Texture2D" uid="uid://u7tvdivculjl" path="res://assets/Treasure Hunters/Treasure Hunters/Wood and Paper UI/Sprites/Big Text/1.png" id="7_52gyb"]
+[ext_resource type="Texture2D" uid="uid://djgr5boairrp" path="res://assets/Treasure Hunters/Treasure Hunters/Wood and Paper UI/Sprites/Big Text/18.png" id="8_rmhw1"]
+[ext_resource type="AudioStream" uid="uid://bdk7py58j66m" path="res://assets/sounds/ui/JDSherbert - Ultimate UI SFX Pack - Select - 2.ogg" id="10_1na8e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4e3nb"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0v80s"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_753g0"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_woj0o"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5nmnx"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qjp1d"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_il5jy"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x2dv8"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ggib8"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+
+[node name="mainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kl5q7")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 40.0
+offset_right = 97.0
+offset_bottom = 182.0
+texture = ExtResource("2_hd102")
+patch_margin_left = 32
+patch_margin_top = 32
+patch_margin_right = 32
+patch_margin_bottom = 32
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.023
+anchor_top = 0.5
+anchor_right = 0.171
+anchor_bottom = 0.5
+offset_left = -1.36
+offset_top = -90.0
+offset_right = 233.64
+offset_bottom = 69.0
+grow_vertical = 2
+theme_override_constants/margin_left = 31
+theme_override_constants/margin_top = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 3
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.2, 0.196078, 0.239216, 1)
+theme_override_colors/font_pressed_color = Color(0.831373, 0.392157, 0.352941, 1)
+theme_override_colors/font_hover_color = Color(0.831373, 0.392157, 0.352941, 1)
+theme_override_colors/font_focus_color = Color(0.831373, 0.392157, 0.352941, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.831373, 0.392157, 0.352941, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4e3nb")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_0v80s")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_753g0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_woj0o")
+text = "Play"
+expand_icon = true
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.2, 0.196078, 0.239216, 1)
+theme_override_colors/font_pressed_color = Color(0.831373, 0.392157, 0.352941, 1)
+theme_override_colors/font_hover_color = Color(0.831373, 0.392157, 0.352941, 1)
+theme_override_colors/font_focus_color = Color(0.831373, 0.392157, 0.352941, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.831373, 0.392157, 0.352941, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5nmnx")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_qjp1d")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_il5jy")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_x2dv8")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ggib8")
+text = "Quit"
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.2, 0.196078, 0.239216, 1)
+theme_override_font_sizes/font_size = 7
+text = "ver 1.0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="D" type="NinePatchRect" parent="."]
+layout_mode = 2
+offset_left = 13.0
+offset_top = 4.0
+offset_right = 37.0
+offset_bottom = 36.0
+texture = ExtResource("2_506g5")
+
+[node name="E" type="NinePatchRect" parent="."]
+layout_mode = 2
+offset_left = 45.0
+offset_top = 4.0
+offset_right = 69.0
+offset_bottom = 36.0
+texture = ExtResource("3_hlkfj")
+
+[node name="L" type="NinePatchRect" parent="."]
+layout_mode = 2
+offset_left = 77.0
+offset_top = 4.0
+offset_right = 101.0
+offset_bottom = 36.0
+texture = ExtResource("4_j8n5f")
+
+[node name="I" type="NinePatchRect" parent="."]
+layout_mode = 2
+offset_left = 109.0
+offset_top = 4.0
+offset_right = 133.0
+offset_bottom = 36.0
+texture = ExtResource("5_ltcxr")
+
+[node name="V" type="NinePatchRect" parent="."]
+layout_mode = 2
+offset_left = 141.0
+offset_top = 4.0
+offset_right = 165.0
+offset_bottom = 36.0
+texture = ExtResource("6_7k12q")
+
+[node name="A" type="NinePatchRect" parent="."]
+layout_mode = 2
+offset_left = 173.0
+offset_top = 4.0
+offset_right = 197.0
+offset_bottom = 36.0
+texture = ExtResource("7_52gyb")
+
+[node name="R" type="NinePatchRect" parent="."]
+layout_mode = 2
+offset_left = 205.0
+offset_top = 4.0
+offset_right = 229.0
+offset_bottom = 36.0
+texture = ExtResource("8_rmhw1")
+
+[node name="R2" type="NinePatchRect" parent="."]
+layout_mode = 2
+offset_left = 237.0
+offset_top = 4.0
+offset_right = 261.0
+offset_bottom = 36.0
+texture = ExtResource("8_rmhw1")
+
+[node name="R3" type="NinePatchRect" parent="."]
+layout_mode = 2
+offset_left = 269.0
+offset_top = 4.0
+offset_right = 293.0
+offset_bottom = 36.0
+texture = ExtResource("8_rmhw1")
+
+[node name="Highscore" type="Label" parent="."]
+layout_mode = 0
+offset_left = 444.0
+offset_top = 106.0
+offset_right = 484.0
+offset_bottom = 119.0
+
+[node name="Click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_1na8e")
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/Play" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

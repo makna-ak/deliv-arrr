@@ -1,0 +1,443 @@
+[gd_scene load_steps=40 format=3 uid="uid://dmduoupmwt27s"]
+
+[ext_resource type="Texture2D" uid="uid://def0ubu713s0a" path="res://assets/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Background/BG Image.png" id="1_7ptsf"]
+[ext_resource type="Texture2D" uid="uid://dcx6ccxlsek13" path="res://assets/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Background/Water Reflect Big 03.png" id="2_kqlq7"]
+[ext_resource type="Texture2D" uid="uid://cvahptw3x8jvo" path="res://assets/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Background/Big Clouds.png" id="3_m212j"]
+[ext_resource type="Texture2D" uid="uid://dxictcbibxlcp" path="res://assets/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Background/Small Cloud 2.png" id="4_ajcsc"]
+[ext_resource type="Texture2D" uid="uid://dnu8chbvvvqju" path="res://assets/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Background/Small Cloud 1.png" id="5_5q2nc"]
+[ext_resource type="Texture2D" uid="uid://cws56b0kab3mc" path="res://assets/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Background/Small Cloud 3.png" id="6_8h7gj"]
+[ext_resource type="Texture2D" uid="uid://cq23lwpvudv44" path="res://assets/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Terrain/Terrain (32x32).png" id="7_g87b2"]
+[ext_resource type="Texture2D" uid="uid://cnhw5q3nuqc50" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Water/Water/Top/Sheet.png" id="8_rud5c"]
+[ext_resource type="Texture2D" uid="uid://dt6v50wdbhnmy" path="res://assets/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Background/Additional Water.png" id="9_sp34c"]
+[ext_resource type="Texture2D" uid="uid://cu0ovpck3pqki" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Water/Water/Bottom/1.png" id="10_o0xar"]
+[ext_resource type="Texture2D" uid="uid://cybxa72idvsq2" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Sail/Wind/1.png" id="11_v21ou"]
+[ext_resource type="Texture2D" uid="uid://uepwsaq3k6mq" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Sail/Wind/2.png" id="12_4oy6n"]
+[ext_resource type="Texture2D" uid="uid://dbw7810rr0w1v" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Sail/Wind/3.png" id="13_a4nk0"]
+[ext_resource type="Texture2D" uid="uid://cho7ybo3khbx5" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Sail/Wind/4.png" id="14_dt50b"]
+[ext_resource type="Texture2D" uid="uid://ntqwcwb4yepg" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/1.png" id="15_mjgae"]
+[ext_resource type="Texture2D" uid="uid://da2tsoje5rx0a" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/2.png" id="16_ac2n4"]
+[ext_resource type="Texture2D" uid="uid://ddh2en866w5co" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/3.png" id="17_skcjr"]
+[ext_resource type="Texture2D" uid="uid://b5ucxinhx06i2" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/4.png" id="18_13pjt"]
+[ext_resource type="Texture2D" uid="uid://swwt57q6rkxa" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/5.png" id="19_jxs4x"]
+[ext_resource type="Texture2D" uid="uid://bd6rde5a0k3v1" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/6.png" id="20_wyh3l"]
+[ext_resource type="Texture2D" uid="uid://dduj5fvk6pmaw" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Anchor/2.png" id="21_lpvkd"]
+[ext_resource type="Texture2D" uid="uid://cukhkk6a3x74g" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Anchor/1.png" id="22_shxrs"]
+[ext_resource type="PackedScene" uid="uid://las1htstodyc" path="res://player.tscn" id="23_1xb66"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="24_ufpf1"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="25_5cxsa"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="26_786w7"]
+[ext_resource type="Texture2D" uid="uid://dwbbv26cww44h" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/3.png" id="27_spigf"]
+[ext_resource type="Script" path="res://chest.gd" id="27_ucqew"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_imwub"]
+texture = ExtResource("7_g87b2")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -13.75, 16, -13.25, 16, 16, -16, 16)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -13.5, 16, -13.25, 16, 16, -16, 16)
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -12.75, 16, -12.5, 16, 16, -16, 16)
+4:0/0 = 0
+4:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:0/0/physics_layer_0/angular_velocity = 0.0
+6:0/0 = 0
+6:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:0/0/physics_layer_0/angular_velocity = 0.0
+7:0/0 = 0
+7:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:0/0/physics_layer_0/angular_velocity = 0.0
+9:0/0 = 0
+9:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:0/0/physics_layer_0/angular_velocity = 0.0
+10:0/0 = 0
+10:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:0/0/physics_layer_0/angular_velocity = 0.0
+12:0/0 = 0
+12:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+12:0/0/physics_layer_0/angular_velocity = 0.0
+13:0/0 = 0
+13:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+13:0/0/physics_layer_0/angular_velocity = 0.0
+15:0/0 = 0
+15:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:0/0/physics_layer_0/angular_velocity = 0.0
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+2:1/0 = 0
+2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:1/0/physics_layer_0/angular_velocity = 0.0
+4:1/0 = 0
+4:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:1/0/physics_layer_0/angular_velocity = 0.0
+6:1/0 = 0
+6:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:1/0/physics_layer_0/angular_velocity = 0.0
+7:1/0 = 0
+7:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:1/0/physics_layer_0/angular_velocity = 0.0
+9:1/0 = 0
+9:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:1/0/physics_layer_0/angular_velocity = 0.0
+10:1/0 = 0
+10:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:1/0/physics_layer_0/angular_velocity = 0.0
+12:1/0 = 0
+12:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+12:1/0/physics_layer_0/angular_velocity = 0.0
+13:1/0 = 0
+13:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+13:1/0/physics_layer_0/angular_velocity = 0.0
+15:1/0 = 0
+15:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:1/0/physics_layer_0/angular_velocity = 0.0
+16:1/0 = 0
+16:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+16:1/0/physics_layer_0/angular_velocity = 0.0
+0:2/0 = 0
+0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:2/0/physics_layer_0/angular_velocity = 0.0
+1:2/0 = 0
+1:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:2/0/physics_layer_0/angular_velocity = 0.0
+2:2/0 = 0
+2:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:2/0/physics_layer_0/angular_velocity = 0.0
+4:2/0 = 0
+4:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:2/0/physics_layer_0/angular_velocity = 0.0
+6:3/0 = 0
+6:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:3/0/physics_layer_0/angular_velocity = 0.0
+7:3/0 = 0
+7:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:3/0/physics_layer_0/angular_velocity = 0.0
+9:3/0 = 0
+9:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:3/0/physics_layer_0/angular_velocity = 0.0
+10:3/0 = 0
+10:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:3/0/physics_layer_0/angular_velocity = 0.0
+12:3/0 = 0
+12:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+12:3/0/physics_layer_0/angular_velocity = 0.0
+13:3/0 = 0
+13:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+13:3/0/physics_layer_0/angular_velocity = 0.0
+15:3/0 = 0
+15:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:3/0/physics_layer_0/angular_velocity = 0.0
+16:3/0 = 0
+16:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+16:3/0/physics_layer_0/angular_velocity = 0.0
+0:4/0 = 0
+0:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:4/0/physics_layer_0/angular_velocity = 0.0
+1:4/0 = 0
+1:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:4/0/physics_layer_0/angular_velocity = 0.0
+2:4/0 = 0
+2:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:4/0/physics_layer_0/angular_velocity = 0.0
+4:4/0 = 0
+4:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:4/0/physics_layer_0/angular_velocity = 0.0
+6:4/0 = 0
+6:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:4/0/physics_layer_0/angular_velocity = 0.0
+7:4/0 = 0
+7:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:4/0/physics_layer_0/angular_velocity = 0.0
+9:4/0 = 0
+9:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:4/0/physics_layer_0/angular_velocity = 0.0
+10:4/0 = 0
+10:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:4/0/physics_layer_0/angular_velocity = 0.0
+12:4/0 = 0
+12:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+12:4/0/physics_layer_0/angular_velocity = 0.0
+13:4/0 = 0
+13:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+13:4/0/physics_layer_0/angular_velocity = 0.0
+15:4/0 = 0
+15:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:4/0/physics_layer_0/angular_velocity = 0.0
+16:4/0 = 0
+16:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+16:4/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cbfjw"]
+texture = ExtResource("8_rud5c")
+texture_region_size = Vector2i(96, 32)
+4:0/0 = 0
+4:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:0/0/physics_layer_0/angular_velocity = 0.0
+5:0/0 = 0
+5:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:0/0/physics_layer_0/angular_velocity = 0.0
+6:0/0 = 0
+6:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:0/0/physics_layer_0/angular_velocity = 0.0
+7:0/0 = 0
+7:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:0/0/physics_layer_0/angular_velocity = 0.0
+8:0/0 = 0
+8:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:0/0/physics_layer_0/angular_velocity = 0.0
+9:0/0 = 0
+9:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:0/0/physics_layer_0/angular_velocity = 0.0
+10:0/0 = 0
+10:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:0/0/physics_layer_0/angular_velocity = 0.0
+11:0/0 = 0
+11:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+11:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/animation_columns = 4
+0:0/animation_frame_0/duration = 0.1
+0:0/animation_frame_1/duration = 0.1
+0:0/animation_frame_2/duration = 0.1
+0:0/animation_frame_3/duration = 0.1
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ho1vl"]
+texture = ExtResource("9_sp34c")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o2nvw"]
+texture = ExtResource("10_o0xar")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSet" id="TileSet_cx4ew"]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
+sources/1 = SubResource("TileSetAtlasSource_imwub")
+sources/2 = SubResource("TileSetAtlasSource_o2nvw")
+sources/10 = SubResource("TileSetAtlasSource_cbfjw")
+sources/11 = SubResource("TileSetAtlasSource_ho1vl")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4rk8f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_v21ou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_4oy6n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_a4nk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_dt50b")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6rrqe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_mjgae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ac2n4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_skcjr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_13pjt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_jxs4x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_wyh3l")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_btwgl"]
+height = 86.0
+
+[sub_resource type="Resource" id="Resource_ivg4h"]
+script = ExtResource("26_786w7")
+duration = 1.0
+transition = 0
+ease = 2
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qbcwm"]
+size = Vector2(35, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fm6uw"]
+size = Vector2(42, 32)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0, 0)
+motion_mirroring = Vector2(324, 0)
+
+[node name="BgImage" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("1_7ptsf")
+centered = false
+
+[node name="WaterReflectBig03" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(194, 92)
+texture = ExtResource("2_kqlq7")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.5, 0)
+motion_mirroring = Vector2(448, 0)
+
+[node name="SmallCloud2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(127, -13)
+texture = ExtResource("4_ajcsc")
+centered = false
+
+[node name="SmallCloud3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(262, 7)
+scale = Vector2(0.541667, 0.541667)
+texture = ExtResource("5_5q2nc")
+
+[node name="SmallCloud4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(-2, 10)
+scale = Vector2(0.75641, 0.75641)
+texture = ExtResource("6_8h7gj")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(0, -15)
+motion_scale = Vector2(1, 0)
+motion_mirroring = Vector2(448, 0)
+
+[node name="BigClouds" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture = ExtResource("3_m212j")
+centered = false
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_cx4ew")
+format = 2
+layer_0/name = "bg"
+layer_0/z_index = -1
+layer_0/tile_data = PackedInt32Array(327680, 11, 0, 327681, 11, 0, 393217, 11, 0, 393216, 11, 0, 393218, 11, 0, 393219, 11, 0, 393220, 11, 0, 393221, 11, 0, 393222, 11, 0, 327686, 11, 0, 262150, 11, 0, 327682, 11, 0, 327683, 11, 0, 327684, 11, 0, 327685, 11, 0, 262151, 11, 0, 327687, 11, 0, 393223, 11, 0, 262152, 11, 0, 327688, 11, 0, 393224, 11, 0, 262153, 11, 0, 327689, 11, 0, 393225, 11, 0, 262154, 11, 0, 327690, 11, 0, 393226, 11, 0, 262155, 11, 0, 327691, 11, 0, 393227, 11, 0, 262156, 11, 0, 327692, 11, 0, 393228, 11, 0, 262157, 11, 0, 327693, 11, 0, 393229, 11, 0, 262158, 11, 0, 327694, 11, 0, 393230, 11, 0, 262159, 11, 0, 327695, 11, 0, 393231, 11, 0, 262160, 11, 0, 327696, 11, 0, 393232, 11, 0, 262161, 11, 0, 327697, 11, 0, 393233, 11, 0, 262162, 11, 0, 327698, 11, 0, 393234, 11, 0, 262163, 11, 0, 327699, 11, 0, 393235, 11, 0, 262164, 11, 0, 327700, 11, 0, 393236, 11, 0, 262165, 11, 0, 327701, 11, 0, 393237, 11, 0, 262166, 11, 0, 327702, 11, 0, 393238, 11, 0, 262167, 11, 0, 327703, 11, 0, 393239, 11, 0, 262168, 11, 0, 327704, 11, 0, 393240, 11, 0, 262169, 11, 0, 327705, 11, 0, 393241, 11, 0, 262170, 11, 0, 327706, 11, 0, 393242, 11, 0, 262149, 11, 0, 262148, 11, 0, 262147, 11, 0, 262146, 11, 0, 262145, 11, 0, 262144, 11, 0)
+layer_1/name = "Water"
+layer_1/tile_data = PackedInt32Array(327681, 10, 0, 327684, 10, 0, 327686, 65538, 0, 393216, 65538, 0, 393217, 65538, 0, 393218, 65538, 0, 393219, 65538, 0, 393220, 65538, 0, 393221, 65538, 0, 393222, 65538, 0)
+layer_2/name = "Ground"
+layer_2/tile_data = PackedInt32Array(327686, 1, 1, 393222, 1, 2, 327687, 65537, 1, 393223, 65537, 2, 327688, 65537, 1, 393224, 65537, 2, 327689, 65537, 1, 393225, 65537, 2, 327690, 65537, 1, 393226, 65537, 2, 327691, 65537, 1, 393227, 65537, 2, 327692, 65537, 1, 393228, 65537, 2, 327693, 65537, 1, 393229, 65537, 2, 327694, 65537, 1, 393230, 65537, 2, 327695, 65537, 1, 393231, 65537, 2, 327696, 65537, 1, 393232, 65537, 2, 327697, 65537, 1, 393233, 65537, 2, 327698, 65537, 1, 393234, 65537, 2, 327699, 65537, 1, 393235, 65537, 2, 327700, 65537, 1, 393236, 65537, 2, 327701, 65537, 1, 393237, 65537, 2, 327702, 65537, 1, 393238, 65537, 2, 327703, 65537, 1, 393239, 65537, 2, 327704, 65537, 1, 393240, 65537, 2, 327705, 65537, 1, 393241, 65537, 2, 327706, 131073, 1, 393242, 131073, 2, 262150, 1, 0, 262151, 65537, 0, 262152, 65537, 0, 262153, 65537, 0, 262154, 65537, 0, 262155, 65537, 0, 262156, 65537, 0, 262157, 65537, 0, 262158, 65537, 0, 262159, 65537, 0, 262160, 65537, 0, 262161, 65537, 0, 262162, 65537, 0, 262163, 65537, 0, 262164, 65537, 0, 262165, 65537, 0, 262166, 65537, 0, 262167, 65537, 0, 262168, 65537, 0, 262169, 65537, 0, 262170, 131073, 0)
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2(150, 163)
+freeze = true
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="RigidBody2D"]
+z_index = -1
+position = Vector2(9, -36)
+sprite_frames = SubResource("SpriteFrames_4rk8f")
+autoplay = "default"
+frame_progress = 0.036648
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="RigidBody2D"]
+z_index = -1
+sprite_frames = SubResource("SpriteFrames_6rrqe")
+autoplay = "default"
+frame_progress = 0.204969
+
+[node name="2" type="Sprite2D" parent="RigidBody2D/AnimatedSprite2D"]
+position = Vector2(-23, 1)
+texture = ExtResource("21_lpvkd")
+
+[node name="1" type="Sprite2D" parent="RigidBody2D/AnimatedSprite2D"]
+position = Vector2(-23, 12)
+texture = ExtResource("22_shxrs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_btwgl")
+
+[node name="Player" parent="." instance=ExtResource("23_1xb66")]
+position = Vector2(238, 97)
+scale = Vector2(0.5, 0.5)
+collision_layer = 65
+falling_gravity_multiplier = 1.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(238, 93.905)
+limit_left = 0
+limit_top = 0
+limit_right = 864
+limit_bottom = 209
+
+[node name="PhantomCameraHost" type="Node" parent="Camera2D"]
+script = ExtResource("24_ufpf1")
+
+[node name="PhantomCamera2D" type="Node2D" parent="." node_paths=PackedStringArray("follow_target", "follow_targets")]
+position = Vector2(238, 93.905)
+script = ExtResource("25_5cxsa")
+follow_mode = 5
+follow_target = NodePath("../Player")
+follow_targets = [NodePath("../Player"), NodePath("../RigidBody2D")]
+tween_resource = SubResource("Resource_ivg4h")
+follow_offset = Vector2(0, -3.095)
+follow_damping = true
+follow_damping_value = Vector2(0.4, 0)
+auto_zoom_min = -5.0
+auto_zoom_max = 1.0
+dead_zone_width = 0.104
+dead_zone_height = 0.014
+limit_left = 0
+limit_top = 0
+limit_right = 864
+limit_bottom = 209
+
+[node name="Chest" type="StaticBody2D" parent="."]
+position = Vector2(129, 137)
+script = ExtResource("27_ucqew")
+
+[node name="Sprite2D" type="Sprite2D" parent="Chest"]
+texture = ExtResource("27_spigf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chest"]
+position = Vector2(2.5, 4)
+shape = SubResource("RectangleShape2D_qbcwm")
+
+[node name="Area2D" type="Area2D" parent="Chest"]
+collision_mask = 65
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chest/Area2D"]
+position = Vector2(2, 0)
+shape = SubResource("RectangleShape2D_fm6uw")
+
+[connection signal="body_entered" from="Chest/Area2D" to="Chest" method="_on_area_2d_body_entered"]
+[connection signal="input_event" from="Chest/Area2D" to="Chest" method="_on_area_2d_input_event"]

@@ -1,0 +1,497 @@
+[gd_scene load_steps=78 format=3 uid="uid://24cpjuwvcbbv"]
+
+[ext_resource type="PackedScene" uid="uid://dmkpgrs6d5by1" path="res://UI/main_menu.tscn" id="1_s33jw"]
+[ext_resource type="Texture2D" uid="uid://def0ubu713s0a" path="res://assets/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Background/BG Image.png" id="2_4tdqx"]
+[ext_resource type="Texture2D" uid="uid://scaatwuiwtf5" path="res://assets/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Background/Water Reflect Big 01.png" id="3_dtqam"]
+[ext_resource type="Texture2D" uid="uid://dlxjem3d40lbm" path="res://assets/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Background/Water Reflect Big 02.png" id="4_ivi7u"]
+[ext_resource type="Texture2D" uid="uid://dcx6ccxlsek13" path="res://assets/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Background/Water Reflect Big 03.png" id="5_jvt0k"]
+[ext_resource type="Texture2D" uid="uid://75nob68mi5s6" path="res://assets/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Background/Water Reflect Big 04.png" id="6_u73ap"]
+[ext_resource type="Script" path="res://scenes/CloudLayer.gd" id="7_pq7vt"]
+[ext_resource type="Texture2D" uid="uid://dxictcbibxlcp" path="res://assets/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Background/Small Cloud 2.png" id="8_tex6l"]
+[ext_resource type="Texture2D" uid="uid://dnu8chbvvvqju" path="res://assets/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Background/Small Cloud 1.png" id="9_50rx1"]
+[ext_resource type="Texture2D" uid="uid://cws56b0kab3mc" path="res://assets/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Background/Small Cloud 3.png" id="10_rta0a"]
+[ext_resource type="Texture2D" uid="uid://cvahptw3x8jvo" path="res://assets/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Background/Big Clouds.png" id="11_5qb3g"]
+[ext_resource type="Texture2D" uid="uid://cnhw5q3nuqc50" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Water/Water/Top/Sheet.png" id="12_bqndk"]
+[ext_resource type="Texture2D" uid="uid://dt6v50wdbhnmy" path="res://assets/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Background/Additional Water.png" id="13_5ni83"]
+[ext_resource type="Texture2D" uid="uid://cu0ovpck3pqki" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Water/Water/Bottom/1.png" id="14_6ogx8"]
+[ext_resource type="Texture2D" uid="uid://dmrm2dcsoqsd8" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Aseprite/water_reflexes_2.png" id="15_mivgm"]
+[ext_resource type="Texture2D" uid="uid://dkt0gnlju0eqg" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Aseprite/water_reflexes_1.png" id="16_c0q36"]
+[ext_resource type="Texture2D" uid="uid://cybxa72idvsq2" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Sail/Wind/1.png" id="17_0c5cg"]
+[ext_resource type="Texture2D" uid="uid://uepwsaq3k6mq" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Sail/Wind/2.png" id="18_acuc0"]
+[ext_resource type="Texture2D" uid="uid://dbw7810rr0w1v" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Sail/Wind/3.png" id="19_jv3fb"]
+[ext_resource type="Texture2D" uid="uid://cho7ybo3khbx5" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Sail/Wind/4.png" id="20_5hvgv"]
+[ext_resource type="Texture2D" uid="uid://ntqwcwb4yepg" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/1.png" id="21_lg064"]
+[ext_resource type="Texture2D" uid="uid://da2tsoje5rx0a" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/2.png" id="22_l163h"]
+[ext_resource type="Texture2D" uid="uid://ddh2en866w5co" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/3.png" id="23_3udbv"]
+[ext_resource type="Texture2D" uid="uid://b5ucxinhx06i2" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/4.png" id="24_cd3sq"]
+[ext_resource type="Texture2D" uid="uid://swwt57q6rkxa" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/5.png" id="25_2rtbq"]
+[ext_resource type="Texture2D" uid="uid://bd6rde5a0k3v1" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/6.png" id="26_s64pv"]
+[ext_resource type="Texture2D" uid="uid://dduj5fvk6pmaw" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Anchor/2.png" id="27_prta2"]
+[ext_resource type="Texture2D" uid="uid://cukhkk6a3x74g" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Anchor/1.png" id="28_3qhnn"]
+[ext_resource type="Script" path="res://scenes/chest.gd" id="29_354e1"]
+[ext_resource type="Texture2D" uid="uid://dwbbv26cww44h" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/3.png" id="30_k7ds7"]
+[ext_resource type="Texture2D" uid="uid://dm6d60sq8vxfq" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/1.png" id="31_02voj"]
+[ext_resource type="Texture2D" uid="uid://dsy875bpsl2so" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/2.png" id="32_d3r27"]
+[ext_resource type="Texture2D" uid="uid://df4psgvcqw6qp" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/3.png" id="33_21wh7"]
+[ext_resource type="Texture2D" uid="uid://dxffk12rnrrm3" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/4.png" id="34_ynr14"]
+[ext_resource type="Texture2D" uid="uid://bv1337ngp7ppk" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/5.png" id="35_81o0b"]
+[ext_resource type="Texture2D" uid="uid://da0howfij5txb" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/6.png" id="36_2xd8w"]
+[ext_resource type="Texture2D" uid="uid://bgrg4w88eh46m" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/7.png" id="37_hyfwr"]
+[ext_resource type="Texture2D" uid="uid://c62lelrqk8jr5" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/8.png" id="38_yhxjm"]
+[ext_resource type="Texture2D" uid="uid://d1ofdgoajki8m" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/9.png" id="39_ri720"]
+[ext_resource type="Texture2D" uid="uid://gbtbpjpg1ur6" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/10.png" id="40_f1m6a"]
+[ext_resource type="Texture2D" uid="uid://c0pipiben0a3i" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/11.png" id="41_7q686"]
+[ext_resource type="Texture2D" uid="uid://cds2nxqn6cs1o" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/12.png" id="42_ita0t"]
+[ext_resource type="Texture2D" uid="uid://8dh2aev4l5ui" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/13.png" id="43_5chuo"]
+[ext_resource type="Texture2D" uid="uid://lrakclokjtmb" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/14.png" id="44_ofxvn"]
+[ext_resource type="Texture2D" uid="uid://g0fbqdhhmavd" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/15.png" id="45_rdw5y"]
+[ext_resource type="Texture2D" uid="uid://b0m3kab6ailbq" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/16.png" id="46_2gmrw"]
+[ext_resource type="Texture2D" uid="uid://d3s5t7j6t0gwy" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/17.png" id="47_axajj"]
+[ext_resource type="Texture2D" uid="uid://dy8swajteuv81" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/18.png" id="48_gurb2"]
+[ext_resource type="Texture2D" uid="uid://ct8u6w2yt2txe" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/19.png" id="49_4ho5l"]
+[ext_resource type="Texture2D" uid="uid://djy4b60d7mr14" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/20.png" id="50_22rys"]
+[ext_resource type="Texture2D" uid="uid://cpbpia823ocl2" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/21.png" id="51_x3v5n"]
+[ext_resource type="Texture2D" uid="uid://b2ya0qrok3vq5" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/22.png" id="52_jlmh8"]
+[ext_resource type="Texture2D" uid="uid://bv1hfmh0knptk" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/23.png" id="53_bchx3"]
+[ext_resource type="Texture2D" uid="uid://c7xbq5akevy6" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/24.png" id="54_v0aa1"]
+[ext_resource type="Texture2D" uid="uid://b7q3depjrg0e0" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/25.png" id="55_mqwwd"]
+[ext_resource type="Texture2D" uid="uid://3y7c27d6af6m" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/26.png" id="56_frbk8"]
+[ext_resource type="AudioStream" uid="uid://dl8yxkq5v7hwx" path="res://assets/sounds/ambiance/Ambiance_Sea_Loop_Stereo.wav" id="57_kspj1"]
+[ext_resource type="Shader" path="res://assets/shaders/godrays.gdshader" id="58_1cw4w"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fmvpb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_dtqam")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ivi7u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jvt0k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_u73ap")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rt3n7"]
+texture = ExtResource("13_5ni83")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_txcsb"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_rt3n7")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3dm6u"]
+texture = ExtResource("12_bqndk")
+texture_region_size = Vector2i(32, 32)
+0:0/size_in_atlas = Vector2i(3, 1)
+0:0/animation_columns = 4
+0:0/animation_frame_0/duration = 0.1
+0:0/animation_frame_1/duration = 0.1
+0:0/animation_frame_2/duration = 0.1
+0:0/animation_frame_3/duration = 0.1
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4gyag"]
+texture = ExtResource("13_5ni83")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n23db"]
+texture = ExtResource("14_6ogx8")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_doj6w"]
+texture = ExtResource("15_mivgm")
+texture_region_size = Vector2i(32, 32)
+0:1/size_in_atlas = Vector2i(3, 1)
+0:1/animation_columns = 6
+0:1/animation_frame_0/duration = 0.1
+0:1/animation_frame_1/duration = 0.1
+0:1/animation_frame_2/duration = 0.1
+0:1/animation_frame_3/duration = 0.1
+0:1/animation_frame_4/duration = 0.1
+0:1/animation_frame_5/duration = 0.1
+0:1/0 = 0
+0:1/0/texture_origin = Vector2i(12, -2)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hgi6o"]
+texture = ExtResource("16_c0q36")
+texture_region_size = Vector2i(32, 32)
+0:1/size_in_atlas = Vector2i(3, 1)
+0:1/animation_columns = 6
+0:1/animation_frame_0/duration = 0.1
+0:1/animation_frame_1/duration = 0.1
+0:1/animation_frame_2/duration = 0.1
+0:1/animation_frame_3/duration = 0.1
+0:1/animation_frame_4/duration = 0.1
+0:1/animation_frame_5/duration = 0.1
+0:1/0 = 0
+0:1/0/texture_origin = Vector2i(-4, -2)
+
+[sub_resource type="TileSet" id="TileSet_frcm7"]
+tile_size = Vector2i(32, 32)
+sources/1 = SubResource("TileSetAtlasSource_4gyag")
+sources/0 = SubResource("TileSetAtlasSource_3dm6u")
+sources/2 = SubResource("TileSetAtlasSource_n23db")
+sources/4 = SubResource("TileSetAtlasSource_doj6w")
+sources/5 = SubResource("TileSetAtlasSource_hgi6o")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4vnun"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_0c5cg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_acuc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_jv3fb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_5hvgv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_njwiv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_lg064")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_l163h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_3udbv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_cd3sq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_2rtbq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_s64pv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0gmcb"]
+height = 86.0
+
+[sub_resource type="Animation" id="Animation_8jmyo"]
+resource_name = "ship"
+length = 1.20001
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(152, 131), Vector2(148, 128), Vector2(152, 128)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1yyri"]
+_data = {
+"ship": SubResource("Animation_8jmyo")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_icu85"]
+size = Vector2(30, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eiuw4"]
+size = Vector2(42, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gqly2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("31_02voj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_d3r27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_21wh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_ynr14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_81o0b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_2xd8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_hyfwr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_yhxjm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ri720")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_f1m6a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_7q686")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_ita0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_5chuo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_ofxvn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_rdw5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_2gmrw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_axajj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_gurb2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_4ho5l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_22rys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_x3v5n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_jlmh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_bchx3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_v0aa1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_mqwwd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_frbk8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_khkw5"]
+cull_mode = 1
+polygon = PackedVector2Array(-3, -61, -1, -61, -1, -57, 8, -57, 17, -53, 19, -49, 22, -44, 22, -39, 22, -33, 20, -26, 17, -22, 14, -19, 8, -17, 3, -15, 0, -15, 0, -12, -1, -11, -4, -11)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_d06vx"]
+shader = ExtResource("58_1cw4w")
+shader_parameter/angle = -0.3
+shader_parameter/position = -0.2
+shader_parameter/spread = 0.603
+shader_parameter/cutoff = 0.16
+shader_parameter/falloff = 0.2
+shader_parameter/edge_fade = 0.15
+shader_parameter/speed = 3.0
+shader_parameter/ray1_density = 8.0
+shader_parameter/ray2_density = 30.0
+shader_parameter/ray2_intensity = 0.3
+shader_parameter/color = Color(0.98619, 0.571182, 0.257554, 0.8)
+shader_parameter/hdr = true
+shader_parameter/seed = 5.0
+
+[node name="Title" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="mainMenu" parent="CanvasLayer" instance=ExtResource("1_s33jw")]
+offset_top = 50.0
+offset_bottom = 50.0
+scale = Vector2(0.5, 0.5)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+offset = Vector2(-35, 0)
+transform = Transform2D(1, 0, 0, 1, -35, 0)
+scroll_ignore_camera_zoom = true
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0, 0)
+motion_mirroring = Vector2(324, 0)
+
+[node name="BgImage" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("2_4tdqx")
+centered = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(194, 92)
+sprite_frames = SubResource("SpriteFrames_fmvpb")
+autoplay = "default"
+
+[node name="TileMap" type="TileMap" parent="ParallaxBackground/ParallaxLayer"]
+tile_set = SubResource("TileSet_txcsb")
+format = 2
+layer_0/z_index = -1
+layer_0/tile_data = PackedInt32Array(262144, 0, 0, 327680, 0, 0, 393216, 0, 0, 458752, 0, 0, 262145, 0, 0, 327681, 0, 0, 393217, 0, 0, 458753, 0, 0, 262146, 0, 0, 327682, 0, 0, 393218, 0, 0, 458754, 0, 0, 262147, 0, 0, 327683, 0, 0, 393219, 0, 0, 458755, 0, 0, 262148, 0, 0, 327684, 0, 0, 393220, 0, 0, 458756, 0, 0, 262149, 0, 0, 327685, 0, 0, 393221, 0, 0, 458757, 0, 0, 262150, 0, 0, 327686, 0, 0, 393222, 0, 0, 458758, 0, 0, 262151, 0, 0, 327687, 0, 0, 393223, 0, 0, 458759, 0, 0, 262152, 0, 0, 327688, 0, 0, 393224, 0, 0, 458760, 0, 0, 262153, 0, 0, 327689, 0, 0, 393225, 0, 0, 458761, 0, 0, 262154, 0, 0, 327690, 0, 0, 393226, 0, 0, 458762, 0, 0, 262155, 0, 0, 327691, 0, 0, 393227, 0, 0, 458763, 0, 0, 262156, 0, 0, 327692, 0, 0, 393228, 0, 0, 458764, 0, 0, 262157, 0, 0, 327693, 0, 0, 393229, 0, 0, 458765, 0, 0, 262143, 0, 0, 327679, 0, 0, 393215, 0, 0, 458751, 0, 0, 524287, 0, 0)
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0, 0)
+motion_mirroring = Vector2(448, 0)
+script = ExtResource("7_pq7vt")
+CLOUD_SPEED = -5.0
+
+[node name="SmallCloud2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(127, -13)
+texture = ExtResource("8_tex6l")
+centered = false
+
+[node name="SmallCloud3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(262, 7)
+scale = Vector2(0.541667, 0.541667)
+texture = ExtResource("9_50rx1")
+
+[node name="SmallCloud4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(-2, 10)
+scale = Vector2(0.75641, 0.75641)
+texture = ExtResource("10_rta0a")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(0, -15)
+motion_scale = Vector2(0, 0)
+motion_mirroring = Vector2(448, 0)
+script = ExtResource("7_pq7vt")
+
+[node name="BigClouds" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture = ExtResource("11_5qb3g")
+centered = false
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_frcm7")
+format = 2
+layer_0/name = "bg"
+layer_0/z_index = -1
+layer_1/name = "ground"
+layer_1/tile_data = PackedInt32Array(262145, 0, 0, 262148, 0, 0, 262151, 0, 0, 327678, 0, 0, 262154, 0, 0, 393213, 65538, 0, 393214, 65538, 0, 393215, 65538, 0, 327680, 65538, 0, 327681, 65538, 0, 327682, 65538, 0, 327683, 65538, 0, 327684, 65538, 0, 327685, 65538, 0, 327686, 65538, 0, 327687, 65538, 0, 327688, 65538, 0, 327689, 65538, 0, 327690, 65538, 0, 327691, 65538, 0, 393227, 65538, 0, 393226, 65538, 0, 393225, 65538, 0, 393224, 65538, 0, 393223, 65538, 0, 393222, 65538, 0, 393221, 65538, 0, 393220, 65538, 0, 393219, 65538, 0, 393218, 65538, 0, 393217, 65538, 0, 393216, 65538, 0, 458751, 65538, 0, 458750, 65538, 0, 458749, 65538, 0, 458763, 65538, 0, 458762, 65538, 0, 458761, 65538, 0, 458760, 65538, 0, 458759, 65538, 0, 458758, 65538, 0, 458757, 65538, 0, 458756, 65538, 0, 458755, 65538, 0, 458754, 65538, 0, 458753, 65538, 0, 458752, 65538, 0, 524287, 65538, 0, 524286, 65538, 0, 524285, 65538, 0)
+layer_2/name = "water_reflexes"
+layer_2/tile_data = PackedInt32Array(262145, 5, 1, 262148, 4, 1, 262154, 4, 1, 262150, 5, 1)
+
+[node name="Ship" type="RigidBody2D" parent="."]
+position = Vector2(152, 128)
+freeze = true
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Ship"]
+z_index = -1
+position = Vector2(9, -36)
+sprite_frames = SubResource("SpriteFrames_4vnun")
+autoplay = "default"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Ship"]
+z_index = -1
+sprite_frames = SubResource("SpriteFrames_njwiv")
+autoplay = "default"
+
+[node name="2" type="Sprite2D" parent="Ship/AnimatedSprite2D"]
+position = Vector2(-23, 1)
+texture = ExtResource("27_prta2")
+
+[node name="1" type="Sprite2D" parent="Ship/AnimatedSprite2D"]
+position = Vector2(-23, 12)
+texture = ExtResource("28_3qhnn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ship"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_0gmcb")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Ship"]
+libraries = {
+"": SubResource("AnimationLibrary_1yyri")
+}
+autoplay = "ship"
+
+[node name="Chest" type="StaticBody2D" parent="Ship"]
+position = Vector2(-21, -26)
+script = ExtResource("29_354e1")
+
+[node name="Sprite2D" type="Sprite2D" parent="Ship/Chest"]
+texture = ExtResource("30_k7ds7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ship/Chest"]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_icu85")
+
+[node name="Area2D" type="Area2D" parent="Ship/Chest"]
+collision_mask = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ship/Chest/Area2D"]
+position = Vector2(2, 0)
+shape = SubResource("RectangleShape2D_eiuw4")
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Ship"]
+position = Vector2(-8, -25)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_gqly2")
+autoplay = "default"
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Ship"]
+occluder = SubResource("OccluderPolygon2D_khkw5")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("57_kspj1")
+autoplay = true
+
+[node name="Lighting" type="Node2D" parent="."]
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="Lighting"]
+rotation = 0.890118
+energy = 0.4
+shadow_enabled = true
+shadow_filter = 2
+shadow_filter_smooth = 3.0
+
+[node name="DirectionalLight2D2" type="DirectionalLight2D" parent="Lighting"]
+rotation = 0.890118
+energy = 0.5
+shadow_filter = 2
+shadow_filter_smooth = 3.0
+
+[node name="Ground" type="CanvasModulate" parent="Lighting"]
+color = Color(0.395082, 0.268289, 0.225911, 1)
+
+[node name="Godrays" type="ColorRect" parent="Lighting"]
+material = SubResource("ShaderMaterial_d06vx")
+offset_left = 276.0
+offset_right = 437.0
+offset_bottom = 137.0
+scale = Vector2(-1, 1)
+
+[connection signal="body_entered" from="Ship/Chest/Area2D" to="Ship/Chest" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Ship/Chest/Area2D" to="Ship/Chest" method="_on_area_2d_body_exited"]

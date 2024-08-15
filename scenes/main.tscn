@@ -1170,6 +1170,20 @@ autoplay = "default"
 [node name="LightOccluder2D" type="LightOccluder2D" parent="Ship"]
 occluder = SubResource("OccluderPolygon2D_20hqo")
 
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Ship"]
+z_index = -2
+position = Vector2(-39, -1)
+amount = 7
+lifetime = 0.1
+speed_scale = 0.5
+direction = Vector2(100, 100)
+spread = 180.0
+gravity = Vector2(-980, -980)
+initial_velocity_min = 50.0
+initial_velocity_max = 75.0
+scale_amount_min = 0.0
+scale_amount_max = 2.0
+
 [node name="Juan" type="CharacterBody2D" parent="."]
 position = Vector2(839, 112)
 scale = Vector2(0.5, 0.5)

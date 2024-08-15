@@ -1,4 +1,4 @@
-[gd_scene load_steps=78 format=3 uid="uid://24cpjuwvcbbv"]
+[gd_scene load_steps=77 format=3 uid="uid://24cpjuwvcbbv"]
 
 [ext_resource type="PackedScene" uid="uid://dmkpgrs6d5by1" path="res://UI/main_menu.tscn" id="1_s33jw"]
 [ext_resource type="Texture2D" uid="uid://def0ubu713s0a" path="res://assets/Treasure Hunters/Treasure Hunters/Palm Tree Island/Sprites/Background/BG Image.png" id="2_4tdqx"]
@@ -28,7 +28,6 @@
 [ext_resource type="Texture2D" uid="uid://bd6rde5a0k3v1" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/6.png" id="26_s64pv"]
 [ext_resource type="Texture2D" uid="uid://dduj5fvk6pmaw" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Anchor/2.png" id="27_prta2"]
 [ext_resource type="Texture2D" uid="uid://cukhkk6a3x74g" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Ship/Anchor/1.png" id="28_3qhnn"]
-[ext_resource type="Script" path="res://scenes/chest.gd" id="29_354e1"]
 [ext_resource type="Texture2D" uid="uid://dwbbv26cww44h" path="res://assets/Treasure Hunters/Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/3.png" id="30_k7ds7"]
 [ext_resource type="Texture2D" uid="uid://dm6d60sq8vxfq" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/1.png" id="31_02voj"]
 [ext_resource type="Texture2D" uid="uid://dsy875bpsl2so" path="res://assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/2.png" id="32_d3r27"]
@@ -439,7 +438,6 @@ autoplay = "ship"
 
 [node name="Chest" type="StaticBody2D" parent="Ship"]
 position = Vector2(-21, -26)
-script = ExtResource("29_354e1")
 
 [node name="Sprite2D" type="Sprite2D" parent="Ship/Chest"]
 texture = ExtResource("30_k7ds7")
@@ -463,6 +461,20 @@ autoplay = "default"
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="Ship"]
 occluder = SubResource("OccluderPolygon2D_khkw5")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Ship"]
+z_index = -2
+position = Vector2(-39, -1)
+amount = 7
+lifetime = 0.1
+speed_scale = 0.5
+direction = Vector2(100, 100)
+spread = 180.0
+gravity = Vector2(-980, -980)
+initial_velocity_min = 50.0
+initial_velocity_max = 75.0
+scale_amount_min = 0.0
+scale_amount_max = 2.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("57_kspj1")
